@@ -64,9 +64,9 @@ if __name__ == '__main__':
 ''')
 
     if options.user_id is not None:
-        filename = 'out/messages/id%d.html' % options.user_id
+        filename = 'out/html/id%d.html' % options.user_id
     else:
-        filename = 'out/messages/chat%d.html' % options.chat_id
+        filename = 'out/html/chat%d.html' % options.chat_id
     with AtomicWrite(filename) as h:
         h.write('''\
 <!DOCTYPE html>
